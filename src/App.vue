@@ -63,7 +63,9 @@
             <div>
               <span>Rain</span
               ><span
-                >{{ weatherDetails.rain ? weatherDetails.rain : "0" }}mm</span
+                >{{
+                  weatherDetails.rain ? weatherDetails.rain["1h"] : "0"
+                }}mm</span
               >
             </div>
           </div>
