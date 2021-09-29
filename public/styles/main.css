@@ -6,3 +6,133 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+h2 {
+  font-size: 10rem;
+  margin-right: 2rem;
+}
+h3 {
+  font-size: 4rem;
+}
+input {
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  border-bottom: 1px solid rgb(144, 180, 207);
+  width: 70%;
+  font-family: "Poppins";
+  color: rgb(144, 180, 207);
+}
+
+input::placeholder {
+  font-family: "Poppins";
+  color: rgb(144, 180, 207);
+  font-weight: 300;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  align-items: flex-end;
+  padding: 6rem;
+  width: 70%;
+  color: white;
+  background-position: center;
+}
+
+.main > div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.main__info {
+  display: flex;
+  align-items: center;
+}
+
+.main__info__sub {
+  margin: auto 0 0;
+  margin-left: 1rem;
+}
+
+.main__info__sub img {
+  margin-bottom: 1rem;
+}
+
+.aside {
+  background: linear-gradient(to bottom, rgb(40, 93, 132), rgb(109, 129, 143));
+  width: 30%;
+  padding: 0 0 2rem 4rem;
+  font-weight: 300;
+  color: rgb(144, 180, 207);
+}
+
+.aside .search-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+.aside ul {
+  list-style: none;
+}
+.aside ul li {
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.aside ul li:hover {
+  color: white;
+}
+.search-box span {
+  background-color: rgb(170, 205, 225);
+  padding: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.cities-box,
+.weather-details {
+  width: 90%;
+  border-bottom: 1px solid rgb(144, 180, 207);
+}
+.weather-details h4 {
+  color: white;
+  margin: 3rem 0;
+}
+
+.weather-details div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main,
+  .aside {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 80%;
+  }
+}
